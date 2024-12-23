@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="4dp"
+    android:background="@android:color/white">
+
+
+
+    <!-- Header with Logo and Title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/blue_shade"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_ball" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:text="Match Details"
+            android:textColor="@android:color/white"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"/>
+
+        <ImageButton
+            android:id="@+id/buttonPrevious"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_media_previous"
+            android:layout_marginEnd="3dp"
+            app:tint="@android:color/white" />
+
+        <ImageButton
+            android:id="@+id/buttonNext"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_media_next"
+            android:layout_marginEnd="3dp"
+            app:tint="@android:color/white" />
+
+        <ImageButton
+            android:id="@+id/buttonRefresh"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_popup_sync"
+
+            app:tint="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/white"
+        android:paddingTop="3dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/widgetMatchTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Match Title"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+
+        <!-- Team Flags and "vs" -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PAK"
+                android:id="@+id/team1_name"
+                android:textSize="20sp"
+                android:layout_marginEnd="15dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/team1Flag"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/baseline_flag_24"
+                android:contentDescription="Team 1 Flag"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="vs"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IND"
+                android:id="@+id/team2_name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="8dp"/>
+
+            <ImageView
+                android:id="@+id/team2Flag"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/baseline_flag_24"
+                android:contentDescription="Team 2 Flag" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/widgetMatchTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Match Time"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/widgetVenue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Venue"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/widgetStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textSize="12sp"
+            android:textColor="@android:color/holo_red_dark"/>
+
+    </LinearLayout>
+
+</LinearLayout>

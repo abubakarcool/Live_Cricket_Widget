@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Live Cricket Widget</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+
+    </string>
+    <string-array name="page_options">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="yes_no_options">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="day_options">
+        <item>Yesterday</item>
+        <item>Today</item>
+        <item>Tomorrow</item>
+        <item>Day After Tomorrow</item>
+    </string-array>
+
+    <!-- Update interval options for refreshing the widget -->
+    <string-array name="update_interval_options">
+        <item>1 minutes</item>
+        <item>2 minutes</item>
+        <item>3 minutes</item>
+        <item>4 minutes</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>2 hours</item>
+    </string-array>
+
+    <string-array name="team_codes">
+        <item>AFG</item>
+        <item>PAK</item>
+        <item>IND</item>
+        <item>AUS</item>
+        <item>BAN</item>
+        <item>SL</item>
+        <item>ENG</item>
+        <item>WI</item>
+        <item>NZ</item>
+        <item>SA</item>
+        <item>ZIM</item>
+        <item>NAM</item>
+        <item>NED</item>
+        <item>OMA</item>
+        <item>SCOT</item>
+        <item>NEP</item>
+        <item>PNG</item>
+        <item>USA</item>
+        <item>UAE</item>
+        <item>IRE</item>
+    </string-array>
+</resources>
